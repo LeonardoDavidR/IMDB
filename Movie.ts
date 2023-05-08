@@ -1,12 +1,12 @@
-import { Proffesional } from "./Professional";
+import { Professional } from "./Professional";
 
 export class Movie{
     public title : string;
     public releaseYear : number;
-    public actors : Proffesional[];
+    public actors : Professional[];
     public nacionality : string;
-    public director : Proffesional;
-    public writer : Proffesional;
+    public director : Professional;
+    public writer : Professional;
     public language : string; 
     public plataforma : string ; 
     public isMCU : boolean;

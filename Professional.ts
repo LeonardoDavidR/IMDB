@@ -1,4 +1,4 @@
-export class Proffesional{
+export class Professional{
         public name : string;
         public age : number ;
         public weigth : number;

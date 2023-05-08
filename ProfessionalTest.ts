@@ -1,5 +1,5 @@
-import { Proffesional } from "./Professional"
+import { Professional } from "./Professional"
 
-let carlos = new Proffesional("Carlos", 25, 90, 1.70, true, "Venezolana", 15 , "pintor")
+let carlos = new Professional("Carlos", 25, 90, 1.70, true, "Venezolana", 15 , "pintor")
 
 carlos.printAll()
