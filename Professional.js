@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Proffesional = void 0;
-var Proffesional = /** @class */ (function () {
-    function Proffesional(name, age, weigth, heigth, isRetired, nationality, oscarNumber, profession) {
+exports.Professional = void 0;
+var Professional = /** @class */ (function () {
+    function Professional(name, age, weigth, heigth, isRetired, nationality, oscarNumber, profession) {
         this.name = name;
         this.age = age;
         this.weigth = weigth;
@@ -12,9 +12,9 @@ var Proffesional = /** @class */ (function () {
         this.oscarNumber = oscarNumber;
         this.profession = profession;
     }
-    Proffesional.prototype.printAll = function () {
+    Professional.prototype.printAll = function () {
         console.log(this.name, "\n", this.age, "\n", this.weigth, "\n", this.heigth, "\n", this.isRetired, "\n", this.nationality, "\n", this.oscarNumber, "\n", this.profession);
     };
-    return Proffesional;
+    return Professional;
 }());
-exports.Proffesional = Proffesional;
+exports.Professional = Professional;

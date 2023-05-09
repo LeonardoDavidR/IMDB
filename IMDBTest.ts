@@ -3,7 +3,11 @@ import { IMDB } from "./IMDB";
 import { Movie } from "./Movie";
 import { Professional } from "./Professional";
 import * as fs from "fs"
+
 import * as path from 'path';
+
+
+
 
 let actor = new Professional("Gabriel", 22,100,1.92,false,"Spanish", 0,"Actor");
 let actor1 = new Professional("German", 27,85,1.82, false, "Italian", 1,"Actor");
@@ -48,12 +52,18 @@ let iMDB = new IMDB(peliculas)
 
 console.log(iMDB.peliculas)
 
-let stringIMDB = JSON.stringify(iMDB.peliculas)
+
+let strIMDB = JSON.stringify(iMDB.peliculas)
+
+
+fs.writeFileSync ("imdbBBDD.json", strIMDB)
+let lectura = fs.readFileSync(path.join("imdbBBDD.json"))
+
+let parse  = JSON.parse(strIMDB)
+
+console.log(parse)
+
+let stringIMDB = JSON.stringify(iMDB)
 
 
 fs.writeFileSync ("imdbBBDD.json", stringIMDB)
-let lectura = fs.readFileSync(path.join("imdbBBDD.json"))
-
-let parse  = JSON.parse(stringIMDB)
-
-console.log(parse)
