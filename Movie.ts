@@ -33,20 +33,7 @@ export class Movie{
 
     }
     public printAllMov(){
-        console.log("El titulo es : ", this.title);
-        console.log("El año de emision es : ", this.releaseYear);
-        console.log("El reparto es", this.actors);
-        console.log("La pelicula es de : ", this.nacionality);
-        console.log("El director es : ", this.director);
-        console.log("El guionista es : " ,this.writer);
-        console.log("El idioma de la pelicula es : ", this.language);
-        console.log("La plataforma de emision es : " , this.plataforma);
-        console.log("La peli es del UMC : " , this.isMCU );
-        console.log("El nombre del protagonista es : ", this.mainCharacterName);
-        console.log("La productora es : " , this.producer);
-        console.log("El distribuidor es : " , this.distributor);
-        console.log("El genero es : " , this.genre);
-        
+        console.log("\nTitle :"+ this.title+"\nRelease Year :" +this.releaseYear+"\nActors :", this.actors,"\nNacionality :" +this.nacionality+"\nDirector :" ,this.director,"\nWriter :" , this.writer,"\nLanguage :" +this.language+"\nPlataforma :" +this.plataforma+"\nIs MCU :" +this.isMCU+"\nMain Character Name :" +this.mainCharacterName+"\nProducer :" +this.producer+"\nDistributor :" +this.distributor+"\nGenre :" +this.genre);
         
     }
     
